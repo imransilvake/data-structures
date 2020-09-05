@@ -2,6 +2,8 @@
 A data structure is a data organization, management, and storage format that enables efficient access and modification.
 
 ## Linked List
+check out the [implementation](src/implementation/LinkedList.js) detail: 
+
 ```
 // An instance of Linked List class
 const linkedList = new LinkedList();
@@ -52,5 +54,5 @@ console.log({
 ## Binary Search
 todo
 
-## Linked List
+## Stack & Queues
 todo

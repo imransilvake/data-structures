@@ -32,9 +32,9 @@ export default {
 		linkedList.insertNodeAfter("Eggs", "Potato");
 
 		// delete node from the Linked List
-		// linkedList.deleteNode("Fruit");
-		// linkedList.deleteNode("Potato");
-		// linkedList.deleteNode("Cherries");
+		linkedList.deleteNode("Fruit");
+		linkedList.deleteNode("Banana");
+		linkedList.deleteNode("Goose");
 
 		// show and count Linked List
 		const showLinkedList = linkedList.showLinkedList();

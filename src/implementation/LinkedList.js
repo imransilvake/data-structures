@@ -100,27 +100,28 @@ export class LinkedList {
 		// happen when list is completely empty
 		if (!this.head) return;
 
-		// if delete node is at first position
-		while (this.head && this.head.value === value) {
-			this.head = this.head.next;
-		}
-
 		// start from head
 		let currentNode = this.head;
 
 		// traverse Linked List
-		while (currentNode.next) {
+		while (currentNode) {
 			// compare value
-			if (currentNode.next.value === value) {
-				currentNode.next = currentNode.next.next;
-				continue;
+			if (currentNode.value === value) {
+				const prevNode = currentNode.prev;	// prev node
+				const nextNode = currentNode.next;	// next node
+
+				if (prevNode && nextNode) {
+					nextNode.prev = prevNode;		// set next node prev
+					prevNode.next = nextNode;		// set prev node next
+				} else if(!prevNode) {
+					nextNode.prev = null;
+					this.head = nextNode;			// set head to the next node
+				} else {
+					prevNode.next = null;
+					this.tail = prevNode;			// set tail to the prev node
+				}
 			}
 			currentNode = currentNode.next;
-		}
-
-		// set tail
-		if (this.tail.value === value) {
-			this.tail = currentNode;
 		}
 	};
 

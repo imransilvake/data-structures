@@ -69,6 +69,13 @@ linkedList.insertNodeBefore("Eggs", "Potato");
 linkedList.insertNodeAfter("Eggs", "Potato");
 ```
 
+### delete node from the Linked List
+```
+linkedList.deleteNode("Fruit");
+linkedList.deleteNode("Banana");
+linkedList.deleteNode("Goose");
+```
+
 #### Show and Count Linked List
 ```
 const showLinkedList = linkedList.showLinkedList();

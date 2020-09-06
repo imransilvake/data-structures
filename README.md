@@ -3,6 +3,7 @@ A data structure is a data organization, management, and storage format that ena
 
 
 ## Linked List
+##### Check out the [implementation](src/implementation/LinkedList.js) detail.
 A linked list is a linear data structure where each element is a separate object. Each element (node) has two items - the data and a reference to the next node. The entry point into a linked list is called the head of the list. The number of nodes in a list is not fixed and can grow and shrink on demand. 
 
 <p align="center">
@@ -28,8 +29,6 @@ A linked list is a linear data structure where each element is a separate object
 | Insertion: Middle |        Search Time + O(1)         |                       O(n) |
 | Search Elements   |               O(n)                | O(n) if index is not known |
 
-
-Check out the [implementation](src/implementation/LinkedList.js) detail.
 
 #### An instance of Linked List class
 ```

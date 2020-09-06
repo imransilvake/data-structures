@@ -55,18 +55,21 @@ export class LinkedList {
      * @param afterValue
      */
 	insertNodeBefore = (value, afterValue) => {
-		// search existing node
-		const existingNode = this.searchSingleNode(afterValue);
-		const previousNode = existingNode && this.searchSingleNode(existingNode.prev.value);
+		// search current node
+		const currentNode = this.searchSingleNode(afterValue);
+		const previousNode = currentNode && currentNode.prev && this.searchSingleNode(currentNode.prev.value);
 
-		// validate existing node
+		// new node
+		// validate prev node
+		const newNode = new Node(value, previousNode ? previousNode : null, currentNode);
+		
+		// set new node to current prev
+		currentNode.prev = newNode;
+
+		// validate prev node
+		// set new node to prev node next
 		if (previousNode) {
-			// new node
-			const newNode = new Node(value, previousNode, existingNode);
-
-			// insert the new node
 			previousNode.next = newNode;
-			existingNode.prev = newNode;
 		}
 	};
 
@@ -76,17 +79,20 @@ export class LinkedList {
      * @param afterValue
      */
 	insertNodeAfter = (value, afterValue) => {
-		// search existing node
-		const existingNode = this.searchSingleNode(afterValue);
-		const nextNode = existingNode && this.searchSingleNode(existingNode.next.value);
+		// search current node
+		const currentNode = this.searchSingleNode(afterValue);
+		const nextNode = currentNode && currentNode.next && this.searchSingleNode(currentNode.next.value);
 
-		// validate existing node
+		// new node
+		// validate next node
+		const newNode = new Node(value, currentNode, nextNode ? nextNode : null);
+
+		// set new node to current next
+		currentNode.next = newNode;
+
+		// validate next node
+		// set new node to next node prev
 		if (nextNode) {
-			// new node
-			const newNode = new Node(value, existingNode, nextNode);
-
-			// insert the new node
-			existingNode.next = newNode;
 			nextNode.prev = newNode;
 		}
 	};

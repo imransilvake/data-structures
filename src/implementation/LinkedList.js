@@ -1,22 +1,3 @@
-/**
- * Pros:
- * 1) Memory Management: no need to specify the size in advance
- * 2) Useful if you do a lot of insertions at the start of the list - it's faster than array
- * 	array: need to shift all the elements by 1 element
- * 	linkedList: we don't keep track of the postions of the elements
- *
- * Thoughts:
- * 1) Now-a-days, JavaScript has dynamic arrays and memory isn't really the primary issue in web apps
- *
- *
- * Comparisons
- * Point						Linked List								Array
- * Element Acesss				O(n)									O(1) if index is known; otherwise O(n)
- * Insertion: End				O(1) with tail; without tail O(n)		O(1)
- * win -> Insertion: Start		O(1)									O(n)
- * Insertion: Middle			Search Time + O(1)						O(n)
- * Search Elements				O(n)									O(n) if index is not known; otherwise O(1)
- */
 export class LinkedList {
 	constructor() {
 		this.head = null; // initial head is null

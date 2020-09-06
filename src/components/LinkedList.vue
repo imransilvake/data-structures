@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { LinkedList } from './../../implementation/LinkedList';
+import { LinkedList } from './../implementation/LinkedList';
 
 export default {
 	name: "LinkedList",

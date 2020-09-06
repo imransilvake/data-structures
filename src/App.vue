@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import LinkedList from "./components/linked-list/LinkedList.vue";
+import LinkedList from "./components/LinkedList.vue";
 
 export default {
 	name: "App",

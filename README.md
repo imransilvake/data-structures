@@ -63,6 +63,23 @@ linkedList.insertNodeBefore("Eggs", "Potato");
 linkedList.insertNodeAfter("Eggs", "Potato");
 ```
 
+#### Show and Count Linked List
+```
+const showLinkedList = linkedList.showLinkedList();
+const countLinkedList = linkedList.sizeOfLinkedList();
+```
+
+#### search node or nodes in Linked List
+```
+const searchSingleNode = linkedList.searchSingleNode("Grapes");
+const searchAllNodes = linkedList.searchAllNodes("Grapes");
+```
+
+#### count total node occurances
+```
+const countNodeOccurances = linkedList.countNodeOccurances("Cherries");
+```
+
 
 ## Binary Search
 todo

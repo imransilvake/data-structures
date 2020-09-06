@@ -75,13 +75,13 @@ const showLinkedList = linkedList.showLinkedList();
 const countLinkedList = linkedList.sizeOfLinkedList();
 ```
 
-#### search node or nodes in Linked List
+#### Search node or nodes in Linked List
 ```
 const searchSingleNode = linkedList.searchSingleNode("Grapes");
 const searchAllNodes = linkedList.searchAllNodes("Grapes");
 ```
 
-#### count total node occurances
+#### Count total node occurances
 ```
 const countNodeOccurances = linkedList.countNodeOccurances("Cherries");
 ```

@@ -8,7 +8,7 @@ import { LinkedList } from './../../implementation/LinkedList';
 export default {
 	name: "LinkedList",
 	mounted: function () {
-		// An instance of Linked List class
+		// an instance of Linked List class
 		const linkedList = new LinkedList();
 
 		// append new node to the end of Linked List

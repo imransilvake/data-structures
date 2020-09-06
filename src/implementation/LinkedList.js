@@ -110,6 +110,9 @@ export class LinkedList {
 				const prevNode = currentNode.prev;	// prev node
 				const nextNode = currentNode.next;	// next node
 
+				// case 1: middle
+				// case 2: head
+				// case 3: tail
 				if (prevNode && nextNode) {
 					nextNode.prev = prevNode;		// set next node prev
 					prevNode.next = nextNode;		// set prev node next

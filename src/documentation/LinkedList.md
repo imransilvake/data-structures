@@ -1,4 +1,4 @@
-# Doubly Linked List
+# Linked List (Doubly)
 - A Linked List is a linear data structure where each node is a separate object.
 - Each node has two items - the data and a reference to the next node.
 - In Linked List the data is not stored in contagious memory like in arrays.

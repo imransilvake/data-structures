@@ -25,13 +25,13 @@
 
 ## Big O Comparisons
 
-| Point             |            Linked List            |                      Array |
-| ----------------- | :-------------------------------: | -------------------------: |
-| Element Acesss    |     O(n) - sequential access      |       O(1) - direct access |
-| Insertion: End    | O(1) with tail; without tail O(n) |                       O(1) |
-| Insertion: Start  |               O(1)                |                       O(n) |
-| Insertion: Middle |        Search Time + O(1)         |                       O(n) |
-| Search Elements   |               O(n)                | O(n) if index is not known |
+| Point             |       Linked List        |                Array |
+| ----------------- | :----------------------: | -------------------: |
+| Element Acesss    | O(n) - sequential access | O(1) - direct access |
+| Insertion: End    |           O(1)           |                 O(1) |
+| Insertion: Start  |           O(1)           |                 O(n) |
+| Insertion: Middle |    Search Time + O(1)    |                 O(n) |
+| Search Elements   |           O(n)           |                 O(n) |
 
 
 ## Usage

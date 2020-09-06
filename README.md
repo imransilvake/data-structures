@@ -35,7 +35,7 @@ A linked list is a linear data structure where each element is a separate object
 const linkedList = new LinkedList();
 ```
 
-#### append new node to the end of Linked List
+#### Append new node to the end of Linked List
 ```
 linkedList.appendNode("Apple");
 linkedList.appendNode("Banana");
@@ -48,17 +48,17 @@ linkedList.appendNode("Cherries");
 linkedList.appendNode("Goose");
 ```
 
-#### prepend new node to the start of Linked List
+#### Prepend new node to the start of Linked List
 ```
 linkedList.prependNode("Fruit");
 ```
 
-#### insert new node before a given node in the Linked List
+#### Insert new node before a given node in the Linked List
 ```
 linkedList.insertNodeBefore("Eggs", "Potato");
 ```
 
-#### insert new node after a given node in the Linked List
+#### Insert new node after a given node in the Linked List
 ```
 linkedList.insertNodeAfter("Eggs", "Potato");
 ```

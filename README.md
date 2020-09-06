@@ -3,8 +3,8 @@ A data structure is a data organization, management, and storage format that ena
 
 
 ## Linked List
-Check out the [implementation](src/implementation/LinkedList.js) detail.
-#### Read: [Link](src/documentation/LinkedList.md)
+#### Implementation: [Link](src/implementation/LinkedList.js)
+#### Documentation: [Link](src/documentation/LinkedList.md)
 
 
 ## Binary Search

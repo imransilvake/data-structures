@@ -11,46 +11,49 @@ export default {
 		// An instance of Linked List class
 		const linkedList = new LinkedList();
 
-		// append at the end of the Linked List
-		linkedList.appendNodeToEnd("Apple");
-		linkedList.appendNodeToEnd("Banana");
-		linkedList.appendNodeToEnd("Banana");
-		linkedList.appendNodeToEnd("Banana");
-		linkedList.appendNodeToEnd("Orange");
-		linkedList.appendNodeToEnd("Potato");
-		linkedList.appendNodeToEnd("Grapes");
-		linkedList.appendNodeToEnd("Grapes");
-		linkedList.appendNodeToEnd("Grapes");
-		linkedList.appendNodeToEnd("Grapes");
-		linkedList.appendNodeToEnd("Cherries");
+		// append new node to the end of Linked List
+		linkedList.appendNode("Apple");
+		linkedList.appendNode("Banana");
+		linkedList.appendNode("Orange");
+		linkedList.appendNode("Potato");
+		linkedList.appendNode("Grapes");
+		linkedList.appendNode("Cherries");
+		linkedList.appendNode("Cherries");
+		linkedList.appendNode("Cherries");
+		linkedList.appendNode("Goose");
 
-		// prepend at the start of the Linked List
-		linkedList.prependNodeToStart("Fruit");
+		// prepend new node to the start of Linked List
+		linkedList.prependNode("Fruit");
+
+		// insert new node before a given node in the Linked List
+		linkedList.insertNodeBefore("Eggs", "Potato");
+
+		// insert new node after a given node in the Linked List
+		linkedList.insertNodeAfter("Eggs", "Potato");
 
 		// delete node from the Linked List
-		linkedList.deleteNodeFromList("Fruit");
-		linkedList.deleteNodeFromList("Potato");
-		linkedList.deleteNodeFromList("Cherries");
+		// linkedList.deleteNode("Fruit");
+		// linkedList.deleteNode("Potato");
+		// linkedList.deleteNode("Cherries");
 
-		// insert newNode after givenNode
-		linkedList.insertNodeAfter("Insert: Eggs", "Grapes");
+		// show and count Linked List
+		const showLinkedList = linkedList.showLinkedList();
+		const countLinkedList = linkedList.sizeOfLinkedList();
 
-		// output Linked List
-		const allNodes = linkedList.toArray();
+		// search node or nodes in Linked List
+		const searchSingleNode = linkedList.searchSingleNode("Grapes");
+		const searchAllNodes = linkedList.searchAllNodes("Grapes");
 
-		// find matching node or nodes in Linked List
-		const singleMatchingNode = linkedList.findSingleMatchingNode("Grapes");
-		const allMatchingNodes = linkedList.findAllMatchingNodes("Grapes");
-
-		// find total count of all matching nodes
-		const countAllMatchingNodes = linkedList.countOfAllMatchingNodes("Grapes");
+		// count total node occurances
+		const countNodeOccurances = linkedList.countNodeOccurances("Cherries");
 
 		// output
 		console.log({
-			allNodes,
-			singleMatchingNode,
-			allMatchingNodes,
-			countAllMatchingNodes,
+			showLinkedList,
+			countLinkedList,
+			searchSingleNode,
+			searchAllNodes,
+			countNodeOccurances,
 		});
 	},
 };

@@ -3,7 +3,7 @@
 - Each node has two items - the data and a reference to the next node.
 - In Linked List the data is not stored in contagious memory like in arrays.
 - The number of nodes in a list is not fixed and can grow and shrink on demand. 
-- In the Doubly Linked List, we maintain two pointers; for next node and for previous node. This way we will be able to iterate backward any time we want.
+- In the Doubly Linked List, we maintain two pointers; one for next node and another for previous node. This way we will be able to iterate backward or forward any time we want.
 
 <p align="center">
   <img src="../assets/linked-list.jpg" />
@@ -13,14 +13,14 @@
 ## Pros & Cons
 
 ### Pros
-- Memory Management: no need to specify the size in advance.
-- Useful if you do a lot of insertions at the beginning of the list - it's faster than array:
+- Memory Management: LinkedLists dose not require contiguous blocks of memory and therefore can help reduce memory fragmentation.
+- Useful if you need a lot of insertions at the beginning of the list. It's faster than array.
   - Array: need to shift all the elements by 1 element
   - Linked List: we don't keep track of the postions of the elements
 
 ### Cons
 - Linked List does not allow direct access to the individual nodes. If you want to access a particular node then you have to start at the head and follow the references until you get to that node.
-- Another disadvantage is that a Linked List uses more memory compare with to an array because each node store information about the reference to the next node.
+- Another disadvantage is that a Linked List uses more memory compare with to an array because each node store extra information about the reference to the prev or next node.
 
 
 ## Big O Comparisons

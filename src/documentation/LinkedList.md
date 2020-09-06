@@ -9,6 +9,8 @@
   <img src="../assets/linked-list.jpg" />
 </p>
 
+## Pros & Cons
+
 ### Pros
 - Memory Management: no need to specify the size in advance.
 - Useful if you do a lot of insertions at the beginning of the list - it's faster than array:
@@ -19,7 +21,7 @@
 - Linked List does not allow direct access to the individual nodes. If you want to access a particular node then you have to start at the head and follow the references until you get to that node.
 - Another disadvantage is that a Linked List uses more memory compare with to an array because each node store information about the reference to the next node.
 
-### Big O Comparisons
+## Big O Comparisons
 | Point             |            Linked List            |                      Array |
 | ----------------- | :-------------------------------: | -------------------------: |
 | Element Acesss    |     O(n) - sequential access      |       O(1) - direct access |

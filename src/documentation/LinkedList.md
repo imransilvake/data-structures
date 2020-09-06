@@ -69,7 +69,7 @@ linkedList.insertNodeBefore("Eggs", "Potato");
 linkedList.insertNodeAfter("Eggs", "Potato");
 ```
 
-#### delete node from the Linked List
+#### Delete node from the Linked List
 ```
 linkedList.deleteNode("Fruit");
 linkedList.deleteNode("Banana");

@@ -34,8 +34,7 @@
 | Search Elements   |           O(n)           |                 O(n) |
 
 
-## Applications of Linked List in real world
-
+## Applications in real world
 - Image Viewer: Previous and next images are linked, hence can be accessed by next and previous button.
 - Previous and Next Page in Web Browser: We can access previous and next url searched in web browser by pressing back and next button since, they are linked.
 - Music Player: Songs in music player are linked to previous and next song. You can play songs either from starting or ending of the list.

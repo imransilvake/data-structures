@@ -57,7 +57,7 @@ export class LinkedList {
 	insertNodeBefore = (value, afterValue) => {
 		// search current node
 		const currentNode = this.searchSingleNode(afterValue);
-		const previousNode = currentNode && currentNode.prev && this.searchSingleNode(currentNode.prev.value);
+		const previousNode = currentNode.prev;
 
 		// new node
 		// validate prev node
@@ -81,7 +81,7 @@ export class LinkedList {
 	insertNodeAfter = (value, afterValue) => {
 		// search current node
 		const currentNode = this.searchSingleNode(afterValue);
-		const nextNode = currentNode && currentNode.next && this.searchSingleNode(currentNode.next.value);
+		const nextNode = currentNode.next;
 
 		// new node
 		// validate next node

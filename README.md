@@ -8,7 +8,8 @@ A data structure is a data organization, management, and storage format that ena
 
 
 ## Binary Search
-todo
+#### Implementation: [Link](src/implementation/BinarySearch.js)
+#### Documentation: [Link](src/documentation/BinarySearch.md)
 
 
 ## Stack & Queues

@@ -4,7 +4,7 @@
 - A node that have no child is called a leaf node.
 
 <p align="center">
-  <img src="../assets/images/binary-search.jpg" />
+  <img src="../assets/images/binary-search.png" />
 </p>
 
 

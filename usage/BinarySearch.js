@@ -12,16 +12,16 @@ bst.insertNode(12);
 bst.insertNode(28);
 bst.insertNode(39);
 
-// get minimum value node in the tree
+// get minimum value node in the BST
 const minNode = bst.minNode();
 
-// get maximum value node in the tree
+// get maximum value node in the BST
 const maxNode = bst.maxNode();
 
-// get total size of the tree
+// get total size of the BST
 const treeSize = bst.size();
 
-// validate if value is present in the tree
+// validate if value is present in the BST
 const nodeContains = bst.nodeContains(12);
 
 // output

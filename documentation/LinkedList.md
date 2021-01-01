@@ -23,15 +23,15 @@
 - Another disadvantage is that a Linked List uses more memory compare with to an array because each node store extra information about the reference to the prev or next node.
 
 
-## Big O Comparisons
+## Big O Comparisons (Average Case)
 
-| Point             |       Linked List        |                Array |
-| ----------------- | :----------------------: | -------------------: |
-| Element Acesss    | O(n) - sequential access | O(1) - direct access |
-| Insertion: End    |           O(1)           |                 O(1) |
-| Insertion: Start  |           O(1)           |                 O(n) |
-| Insertion: Middle |    Search Time + O(1)    |                 O(n) |
-| Search Elements   |           O(n)           |                 O(n) |
+| Point                         |          Doubly Linked List          |                Array |
+| ----------------------------- | :----------------------------------: | -------------------: |
+| Element Acesss                |       O(n) - sequential access       | O(1) - direct access |
+| Insertion / Deletion: Start   |                 O(1)                 |                 O(n) |
+| Insertion / Deletion: Middle  |    Search Time O(n) + O(1) = O(n)    |                 O(n) |
+| Insertion / Deletion: End     |                 O(1)                 |                 O(1) |
+| Search Elements               |                 O(n)                 |                 O(n) |
 
 
 ## Applications in real world

@@ -15,7 +15,7 @@ class Node {
 export class BinarySearchTree {
     constructor(value) {
         this.root = new Node(value);
-        this.count = 0;
+        this.count = 1;
     }
 
     /**
@@ -107,5 +107,98 @@ export class BinarySearchTree {
         return this.count;
     }
 
-    // depth first search
+    // depth first search - branch by branch
+
+    // in-order
+    // case: left, root, right
+    dfsInOrder() {
+        const result = [];
+
+        // traverse tree
+        const traverseTree = node => {
+            // if left child exists, go left again
+            if (node.left) traverseTree(node.left);
+
+            // root value
+            result.push(node.value);
+
+            // if right child exists, go right again
+            if (node.right) traverseTree(node.right);
+        }
+        traverseTree(this.root);
+
+        return result;
+    }
+
+    // pre-order
+    // case: root, left, right
+    dfsPreOrder() {
+        const result = [];
+
+        // traverse tree
+        const traverseTree = node => {
+            // root value
+            result.push(node.value);
+
+            // if left child exists, go left again
+            if (node.left) traverseTree(node.left);
+
+            // if right child exists, go right again
+            if (node.right) traverseTree(node.right);
+        }
+        traverseTree(this.root);
+
+        return result;
+    }
+
+    // post-order
+    // case: left, right, root
+    dfsPostOrder() {
+        const result = [];
+
+        // traverse tree
+        const traverseTree = node => {
+            // if left child exists, go left again
+            if (node.left) traverseTree(node.left);
+
+            // if right child exists, go right again
+            if (node.right) traverseTree(node.right);
+
+            // root value
+            result.push(node.value);
+        }
+        traverseTree(this.root);
+
+        return result;
+    }
+
+    // breadth first search - level by level
+    // use a queue
+    breadthFirstSearch() {
+        const result = [];
+        const queue = [];
+
+        // push to queue
+        queue.push(this.root);
+
+        while (queue.length) {
+            // pop node from queue
+            const currentNode = queue.shift();
+
+            // push it to result
+            result.push(currentNode.value);
+
+            // check for left child
+            if (currentNode.left) {
+                queue.push(currentNode.left);
+            }
+
+            // check for right child
+            if (currentNode.right) {
+                queue.push(currentNode.right);
+            }
+        }
+
+        return result;
+    }
 }

@@ -2,16 +2,15 @@
 import { BinarySearchTree } from './../implementation/BinarySearch.js';
 
 // an instance of Binary Search Tree class
-const bst = new BinarySearchTree(10);
+const bst = new BinarySearchTree(15);
 
 // insert node to the tree
-bst.insertNode(10);
-bst.insertNode(20);
-bst.insertNode(20);
-bst.insertNode(30);
-bst.insertNode(100);
 bst.insertNode(3);
-bst.insertNode(40);
+bst.insertNode(36);
+bst.insertNode(2);
+bst.insertNode(12);
+bst.insertNode(28);
+bst.insertNode(39);
 
 // get minimum value node in the tree
 const minNode = bst.minNode();
@@ -23,7 +22,7 @@ const maxNode = bst.maxNode();
 const treeSize = bst.size();
 
 // validate if value is present in the tree
-const nodeContains = bst.nodeContains(3000);
+const nodeContains = bst.nodeContains(12);
 
 // output
 console.log({
@@ -31,4 +30,26 @@ console.log({
     maxNode,
     nodeContains,
     treeSize
+});
+
+// DFS
+// in-order: 2, 3, 12, 15, 28, 36, 39
+const dfsInOrder = bst.dfsInOrder();
+
+// pre-order: 15, 3, 2, 12, 36, 28, 39
+const dfsPreOrder = bst.dfsPreOrder();
+
+// post-order: 2, 12, 3, 28, 39, 36, 15
+const dfsPostOrder = bst.dfsPostOrder();
+
+// BFS
+// 15, 3, 36, 2, 12, 28, 39
+const bfs = bst.breadthFirstSearch();
+
+// output
+console.log({
+    dfsInOrder,
+    dfsPreOrder,
+    dfsPostOrder,
+    bfs
 });

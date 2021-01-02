@@ -43,12 +43,12 @@ export class BinarySearchTree {
                     traverseTree(node.right);
                 }
             }
-        }
+        };
         traverseTree(this.root);
 
         // count tree
         this.count++;
-    }
+    };
 
     /**
      * get minimum value node in the tree
@@ -63,7 +63,7 @@ export class BinarySearchTree {
         }
 
         return currentNode.value;
-    }
+    };
 
     /**
      * get maximum value node in the tree
@@ -78,7 +78,7 @@ export class BinarySearchTree {
         }
 
         return currentNode.value;
-    }
+    };
 
     /**
      * validate if value is present in the tree
@@ -98,14 +98,14 @@ export class BinarySearchTree {
             }
         }
         return false;
-    }
+    };
 
     /**
      * get total size of the tree
      */
     size() {
         return this.count;
-    }
+    };
 
     // depth first search - branch by branch
 
@@ -124,11 +124,11 @@ export class BinarySearchTree {
 
             // if right child exists, go right again
             if (node.right) traverseTree(node.right);
-        }
+        };
         traverseTree(this.root);
 
         return result;
-    }
+    };
 
     // pre-order
     // case: root, left, right
@@ -145,11 +145,11 @@ export class BinarySearchTree {
 
             // if right child exists, go right again
             if (node.right) traverseTree(node.right);
-        }
+        };
         traverseTree(this.root);
 
         return result;
-    }
+    };
 
     // post-order
     // case: left, right, root
@@ -166,11 +166,11 @@ export class BinarySearchTree {
 
             // root value
             result.push(node.value);
-        }
+        };
         traverseTree(this.root);
 
         return result;
-    }
+    };
 
     // breadth first search - level by level
     // use a queue
@@ -200,5 +200,5 @@ export class BinarySearchTree {
         }
 
         return result;
-    }
+    };
 }

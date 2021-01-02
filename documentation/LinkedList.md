@@ -25,13 +25,13 @@
 
 ## Big O Comparisons (Average Case)
 
-| Point                         |          Doubly Linked List          |                Array |
-| ----------------------------- | :----------------------------------: | -------------------: |
-| Element Acesss                |       O(n) - sequential access       | O(1) - direct access |
-| Insertion / Deletion: Start   |                 O(1)                 |                 O(n) |
-| Insertion / Deletion: Middle  |    Search Time O(n) + O(1) = O(n)    |                 O(n) |
-| Insertion / Deletion: End     |                 O(1)                 |                 O(1) |
-| Search Elements               |                 O(n)                 |                 O(n) |
+| Point                         |          Doubly Linked List          |                      Array                    |
+| ----------------------------- | :----------------------------------: | --------------------------------------------: |
+| Element Acesss                |       O(n) - sequential access       | O(1) - direct access; O(n) - squential access |
+| Insertion / Deletion          |                 O(1)                 |       O(n) - because of shifting items        |
+| Search Elements               |                 O(n)                 |       O(n) - unsorted; O(log n) sorted        |
+| ----------------------------- | :----------------------------------: | --------------------------------------------: |
+#### Insertion at middle is O(1), but getting to that middle node is O(n).
 
 
 ## Applications in real world

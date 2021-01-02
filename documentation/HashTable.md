@@ -3,7 +3,7 @@
 - Hash Table uses an array as a storage medium and uses hash technique to generate an index where an element is to be inserted or is to be located from.
 
 <p align="center">
-  <img src="../assets/images/hash-table.png" />
+  <img src="../assets/images/hash-table.jpg" />
 </p>
 
 

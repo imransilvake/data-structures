@@ -21,12 +21,11 @@
 
 ## Big O Comparisons (Average Case)
 
-| Point                         |      Binary Search       |                      Array                    |
-| ----------------------------- | :----------------------: | --------------------------------------------: |
-| Element Acesss                |         O(log n)         | O(1) - direct access; O(n) - squential access |
-| Insertion / Deletion          |         O(log n)         |       O(n) - because of shifting items        |
-| Search Elements               |         O(log n)         |       O(n) - unsorted; O(log n) sorted        |
-| ----------------------------- | :----------------------: | --------------------------------------------: |
+| Point                | Binary Search |                                         Array |
+| -------------------- | :-----------: | --------------------------------------------: |
+| Element Acesss       |   O(log n)    | O(1) - direct access; O(n) - squential access |
+| Insertion / Deletion |   O(log n)    |              O(n) - because of shifting items |
+| Search Elements      |   O(log n)    |              O(n) - unsorted; O(log n) sorted |
 
 
 ## Applications in real world

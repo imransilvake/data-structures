@@ -21,12 +21,11 @@
 
 ## Big O Comparisons (Average Case)
 
-| Point                |                     Hash Table                   |                      Array                    |
-| -------------------- | :----------------------------------------------: | --------------------------------------------: |
-| Element Acesss       |      O(1) + Hashing & Indexing - direct access   | O(1) - direct access; O(n) - squential access |
-| Insertion / Deletion |      O(1) + Hashing & Indexing (amortized)       |       O(n) - because of shifting items        |
-| Search Elements      |                        O(1)                      |       O(n) - unsorted; O(log n) sorted        |
-| -------------------- | :----------------------------------------------: | --------------------------------------------: |
+| Point                |                Hash Table                 |                                         Array |
+| -------------------- | :---------------------------------------: | --------------------------------------------: |
+| Element Acesss       | O(1) + Hashing & Indexing - direct access | O(1) - direct access; O(n) - squential access |
+| Insertion / Deletion |   O(1) + Hashing & Indexing (amortized)   |              O(n) - because of shifting items |
+| Search Elements      |                   O(1)                    |              O(n) - unsorted; O(log n) sorted |
 
 
 ## Applications in real world

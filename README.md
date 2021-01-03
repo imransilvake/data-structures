@@ -2,7 +2,7 @@
 A data structure is a data organization, management, and storage format that enables efficient access and modification.
 
 <p align="center">
-  <img src="../assets/images/data-structures.png" />
+  <img src="assets/images/data-structures.png" />
 </p>
 
 

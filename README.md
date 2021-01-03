@@ -1,6 +1,11 @@
 # Data Structures
 A data structure is a data organization, management, and storage format that enables efficient access and modification.
 
+<p align="center">
+  <img src="../assets/images/hash-table.jpg" />
+</p>
+
+
 ## Hash Table
 #### Implementation: [Link](implementation/HashTable.js)
 #### Documentation: [Link](documentation/HashTable.md)

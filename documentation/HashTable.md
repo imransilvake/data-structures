@@ -1,4 +1,5 @@
 # Hash Table
+- key => value lookup
 - In a hash table, data is stored in an array format, where each data value has its own unique index value. Access of data becomes very fast if we know the index of the desired data.
 - Hash Table uses an array as a storage medium and uses hash technique to generate an index where an element is to be inserted or is to be located from.
 
@@ -54,4 +55,10 @@ const fName = hashTable.getItem("firstName");
 const lName = hashTable.getItem("lastName");
 const age = hashTable.getItem("age");
 const dob = hashTable.getItem("dob");
+```
+
+#### Delete item from the Hash Table
+```
+hashTable.deleteItem("age");
+hashTable.deleteItem("dob");
 ```

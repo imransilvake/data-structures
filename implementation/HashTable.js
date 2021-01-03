@@ -6,7 +6,7 @@ export class HashTable {
 	numItems = 0;
 
 	/**
-	 * set item to the table
+	 * set item to the hash table
 	 * @param {*} key
 	 * @param {*} value
 	 */
@@ -21,7 +21,7 @@ export class HashTable {
 		}
 
 		// set item
-		const idx = this.hashStringToInt(key, this.table.length);
+		const idx = this.hash(key, this.table.length);
 		if (this.table[idx]) {
 			this.table[idx].push([key, value]);
 		} else {
@@ -30,18 +30,35 @@ export class HashTable {
 	};
 
 	/**
-	 * get item through key
+	 * get item from hash table
 	 * @param {*} key
 	 */
 	getItem = (key) => {
 		// index
-		const idx = this.hashStringToInt(key, this.table.length);
+		const idx = this.hash(key, this.table.length);
 
 		// value at provided index not exists
 		if (!this.table[idx]) return null;
 
-		// find the item
-		return this.table[idx].find(x => x[0] === key)[1];
+		// find the item from the list
+		const item = this.table[idx].find(x => x[0] === key);
+		return !!item ? item[1] : null;
+	};
+
+	/**
+	 * delete item from hash table
+	 * @param {*} key
+	 */
+	deleteItem = (key) => {
+		// index
+		const idx = this.hash(key, this.table.length);
+
+		// value at provided index not exists
+		if (!this.table[idx]) return null;
+
+		// filter out the item from the list
+		const remainingItems = this.table[idx].filter(x => x[0] !== key);
+		this.table[idx] = remainingItems.length ? remainingItems : null;
 	};
 
 	/**
@@ -52,7 +69,7 @@ export class HashTable {
 		this.table.forEach(item => {
 			if (item && item.length) {
 				item.forEach(([key, value]) => {
-					const idx = this.hashStringToInt(key, newTable.length);
+					const idx = this.hash(key, newTable.length);
 					if (newTable[idx]) {
 						newTable[idx].push([key, value]);
 					} else {
@@ -65,15 +82,15 @@ export class HashTable {
 	};
 
 	/**
-	 * hash method to generate integer values
-	 * @param {*} s
+	 * hash string to index
+	 * @param {*} key
 	 * @param {*} tableSize
 	 */
-	hashStringToInt(s, tableSize) {
-		let hash = 17;
-		for (let i = 0; i < s.length; i++) {
-			hash = (13 * hash * s.charCodeAt(i)) % tableSize;
+	hash(key, tableSize) {
+		let hash = 0;
+		for (let i = 0; i < key.length; i++) {
+			hash += key.charCodeAt(i);
 		}
-		return hash;
+		return hash % tableSize;
 	}
 }
